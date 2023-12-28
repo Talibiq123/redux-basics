@@ -2,7 +2,7 @@ import { INCREASE, DECREASE, RESET } from "../actions/actionTypes.js";
 
 let initialState = 0;
 
-function counterReducer(state=initialState, action) {
+function counterReducer(state=initialState, x) {
     // state 4, action = {type: 'INCREASE',}
 
     switch(action.type) {
@@ -15,8 +15,13 @@ function counterReducer(state=initialState, action) {
         case RESET:
             return initialState;
 
+        default:
+            return state;
 
     }
 }
 
-// counterReducer.increment(4, {type: "INCREASE"})
+// counterReducer()
+// counterReducer(4, increase())
+// counterReducer(5, deceease())
+// counterReducer(4, reset())
