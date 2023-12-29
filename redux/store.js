@@ -1,5 +1,5 @@
 import { createStore } from "redux"; 
-import counterReducer from "./reducer/counterReducer.js";
+import {counterReducer} from "./reducer/counterReducer.js";
 
 
 const store = createStore(counterReducer) // 99
@@ -16,6 +16,6 @@ const store = createStore(counterReducer) // 99
 //  decrease()
 // counterReducer(100, {type: "DECREASE"} ) => 99
 
-console.log(store)
+// console.log(store)
 
 export default store

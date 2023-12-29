@@ -2,7 +2,7 @@ import { INCREASE, DECREASE, RESET } from "../actions/actionTypes.js";
 
 let initialState = 0;
 
-function counterReducer(state=initialState, x) {
+export function counterReducer(state=initialState, action) {
     // state 4, action = {type: 'INCREASE',}
 
     switch(action.type) {
